@@ -126,14 +126,14 @@ const Portfolio = () => {
           codeLink: "https://github.com/Darklorhd/artemia",
           liveLink: "https://artemia-xi.vercel.app/"
         },
-        // {
-        //   title: "SquareUp",
-        //   description: "A website built for a Marketing Agency Company",
-        //   tech: ["ReactJs", "TailwindCss", "Typescript"],
-        //   image: "squareup",
-        //   codeLink: "https://github.com/yourusername/squareup",
-        //   liveLink: "https://squareup-demo.vercel.app"
-        // }
+        {
+          title: "Portfolio",
+          description: "A Personal portfolio website built for myself",
+          tech: ["ReactJs", "TailwindCss", "Javascript"],
+          image: "portfolio",
+          codeLink: "https://github.com/Darklorhd/portfolio",
+          liveLink: "https://omedeport.netlify.app/"
+        }
       ]
     },
     skills: {
@@ -333,7 +333,7 @@ const Portfolio = () => {
             <p className="text-green-100 text-lg">{sections.projects.subtitle}</p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {sections.projects.items.map((project, index) => (
               <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <div className="h-48 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative overflow-hidden">
@@ -357,16 +357,16 @@ const Portfolio = () => {
                       </div>
                     </div>
                   )}
-                  {/* {project.image === 'squareup' && (
+                  {project.image === 'portfolio' && (
                     <div className="w-full h-full bg-gradient-to-br from-green-700 to-green-900 flex items-center justify-center">
                       <div className="text-center text-white">
                         <div className="w-16 h-16 bg-green-500 rounded-lg mx-auto mb-2 flex items-center justify-center">
                           <Code size={32} />
                         </div>
-                        <div className="text-sm opacity-80">Marketing Agency</div>
+                        <div className="text-sm opacity-80">Portfolio</div>
                       </div>
                     </div>
-                  )} */}
+                  )}
                 </div>
                 
                 <div className="p-6">
